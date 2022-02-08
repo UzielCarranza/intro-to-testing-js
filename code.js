@@ -39,3 +39,10 @@ function isFive(input){
         return false;
     }
 }
+
+function isEven(number){
+    if (number % 2 === 1){
+        return false;
+    }
+    return true;
+}

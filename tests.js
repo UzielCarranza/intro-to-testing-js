@@ -60,6 +60,25 @@ describe('isFive', function (){
     });
 })
 
+describe('isEven', function (){
+    it('should be a function', function () {
+        expect(typeof isEven).toBe('function')
+    });
+    it('should return "true"', function () {
+        expect(isEven()).toBe(true)
+    });
+    it('should return true', function () {
+        expect(isEven(2)).toBe(true)
+    });
+    it('should return true', function () {
+        expect(isEven(-2)).toBe(true)
+    });
+    it('should return false', function () {
+        expect(isEven(3)).toBe(false)
+    });
+
+})
+
 
 
 
