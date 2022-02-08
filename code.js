@@ -28,3 +28,14 @@ function sayHello(input) {
     //     return "Hello, Jane!";
     // }
 }
+
+function isFive(input){
+    if(input === 5){
+        return true;
+    }else if (input === "5") {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
