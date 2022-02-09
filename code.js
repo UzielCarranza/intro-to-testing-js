@@ -75,22 +75,15 @@
 //
 // }
 
-function isVowel(letter){
-    if (letter === "a"){
+function isVowel(letter) {
+    if (letter === "a" || letter ==="A") {
         return true;
-    } else if (letter === "A"){
-        return true;
-    } else if (letter === "y"){
+    }
+    else if (typeof letter === 'number' || typeof letter === 'boolean' || typeof
+        letter === 'string' || typeof letter === undefined) {
         return false;
-    } else if(typeof letter === 'number'){
-        return false;
-    } else if (typeof letter === 'boolean'){
-        return false;
-    } else if (typeof letter === 'string'){
-        return false;
-    } else if (letter === undefined){
+    } else {
         return false;
     }
-return true;
 }
 //
