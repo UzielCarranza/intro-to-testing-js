@@ -3,25 +3,25 @@
 // //      return "Hello, World!";
 // // }
 //
-// function sayHello(input) {
-//     if(input === undefined || input === true || input === false){
-//         return "Hello, World!";
-//     }
-//     if (input === ""){
-//         return "empty string";
-//     }
-//     return "Hello, " + input + "!";
-// }
+function sayHello(input) {
+    if(input === undefined || typeof input === 'boolean'){
+        return "Hello, World!";
+    }
+    if (input === ""){
+        return "empty string";
+    }
+    return "Hello, " + input + "!";
+}
 
 
 // exercise 10
 
-// function isFive(input){
-//     if(input === 5 || input === "5"){
-//         return true;
-//     }
-//         return false;
-// }
+function isFive(input){
+    if(input == 5 ){
+        return true;
+    }
+        return false;
+}
 
 
 //exercise 11
@@ -57,41 +57,48 @@ function isEven(number) {
     else if (number == '8') {
         return true;
     }
-    else if (number % 2 === 2) {
+    else if (number % 2 === 0) {
         return true;
     } else if (number % 2 === 1 || typeof number === 'string') {
         return false;
     }
-    return true;
+
 }
 
 
 
 //exercise 12
-// function isVowel(letter) {
-//     if (letter === "a" || letter ==="A") {
-//         return true;
-//     }
-//     else if (typeof letter === 'number' || typeof letter === 'boolean' || typeof
-//         letter === 'string' || typeof letter === undefined) {
-//         return false;
-//     } else {
-//         return false;
-//     }
-// }
+function isVowel(letter) {
+    if (letter === "a" || letter ==="A") {
+        return true;
+    }
+    else if (typeof letter === 'number' || typeof letter === 'boolean' || typeof
+        letter === 'string' || typeof letter === undefined) {
+        return false;
+    } else {
+        return false;
+    }
+}
 
 
 //exercise 13
-//
-// function add(num1, num2) {
-//
-//     var sum1 = parseInt(num1);
-//     var sum2 = parseInt(num2)
-//     var total = sum1 + sum2;
-//     if (typeof sum1 === 'string' || typeof sum2 === 'string') {
-//         return sum1
-//     } else {
-//         return total;
-//         // return num1 + num2;
-//     }
-// }
+
+function add(num1, num2) {
+    if (isNaN(num1) || isNaN(num2)){
+        return 'NaN';
+    }
+    else {
+        return parseInt(num1) + parseInt(num2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

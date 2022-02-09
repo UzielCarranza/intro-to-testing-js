@@ -14,56 +14,61 @@
 //     });
 // });
 
-//
-// describe('sayHello', function (){
-//     it('should be a function', function () {
-//         expect(typeof sayHello).toBe('function')
-//     });
-//     it('should return a string', function () {
-//         expect(typeof sayHello()).toBe("string")
-//     });
-//     it("should return the string 'Hello, Jane!'", function () {
-//         expect(sayHello("Jane")).toBe("Hello, Jane!")
-//     });
-//     it('should the string "Hello, Alex!', function () {
-//         expect(sayHello("Alex")).toBe("Hello, Alex!")
-//     });
-//     it('should the string "Hello, Pat!', function () {
-//         expect(sayHello("Pat")).toBe("Hello, Pat!")
-//     });
-//     it('should return the string "Hello, World!', function () {
-//         expect(sayHello()).toBe("Hello, World!")
-//     });
-//     it('should return true ', function () {
-//         expect(sayHello(true)).toBe("Hello, World!")
-//     });
-//     it('should return false', function () {
-//         expect(sayHello(false)).toBe("Hello, World!")
-//     });
-//     it('should return string "empty string"', function () {
-//         expect(sayHello("")).toBe("empty string")
-//     });
-// })
-//
 
+
+//unit test for sayHello
+
+
+describe('sayHello', function (){
+    it('should be a function', function () {
+        expect(typeof sayHello).toBe('function')
+    });
+    it('should return a string', function () {
+        expect(typeof sayHello()).toBe("string")
+    });
+    it("should return the string 'Hello, Jane!'", function () {
+        expect(sayHello("Jane")).toBe("Hello, Jane!")
+    });
+    it('should the string "Hello, Alex!', function () {
+        expect(sayHello("Alex")).toBe("Hello, Alex!")
+    });
+    it('should the string "Hello, Pat!', function () {
+        expect(sayHello("Pat")).toBe("Hello, Pat!")
+    });
+    it('should return the string "Hello, World!', function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it('should return true ', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('should return false', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+    it('should return string "empty string"', function () {
+        expect(sayHello("")).toBe("empty string")
+    });
+})
 
 // exercise 10
 
 
-// describe('isFive', function (){
-//     it('should be a function', function () {
-//         expect(typeof isFive).toBe('function')
-//     });
-//     it('should return false', function () {
-//         expect(isFive()).toBe(false)
-//     });
-//     it('should return true when input === 5', function () {
-//         expect(isFive(5)).toBe(true)
-//     });
-//     it('should return true', function () {
-//         expect(isFive("5")).toBe(true)
-//     });
-// })
+
+// unit case for isFive
+
+describe('isFive', function (){
+    it('should be a function', function () {
+        expect(typeof isFive).toBe('function')
+    });
+    it('should return false', function () {
+        expect(isFive()).toBe(false)
+    });
+    it('should return true when input === 5', function () {
+        expect(isFive(5)).toBe(true)
+    });
+    it('should return true', function () {
+        expect(isFive("5")).toBe(true)
+    });
+})
 
 
 //11 exercise
@@ -133,56 +138,56 @@ describe('isEven', function (){
 
 //exercise 12
 
-//
-// describe('isVowel', function () {
-//     it('should be a function', function () {
-//         expect(typeof isVowel).toBe('function')
-//     });
-//     it('should return always a boolean', function () {
-//         expect(typeof isVowel()).toBe('boolean')
-//     });
-//     it('should return true when input is "a"', function () {
-//         expect(isVowel("a")).toBe(true)
-//     });
-//     it('should return true when input is "A"', function () {
-//         expect(isVowel("A")).toBe((true))
-//     });
-//     it('should return false when input is "y"', function () {
-//         expect(isVowel("y")).toBe(false)
-//     });
-//     it('should return false when input is number', function () {
-//         expect(isVowel(4)).toBe(false)
-//     });
-//     it('should return false when parameters are true or false', function () {
-//         expect(isVowel(isVowel(true), isVowel(false))).toBe(false)
-//     });
-//     it('should return false when parameter is string', function () {
-//         expect(isVowel("banana")).toBe(false);
-//     });
-//     it('should return false when there ir no input', function () {
-//         expect(isVowel(undefined)).toBe(false)
-//     });
-// })
+
+describe('isVowel', function () {
+    it('should be a function', function () {
+        expect(typeof isVowel).toBe('function')
+    });
+    it('should return always a boolean', function () {
+        expect(typeof isVowel()).toBe('boolean')
+    });
+    it('should return true when input is "a"', function () {
+        expect(isVowel("a")).toBe(true)
+    });
+    it('should return true when input is "A"', function () {
+        expect(isVowel("A")).toBe((true))
+    });
+    it('should return false when input is "y"', function () {
+        expect(isVowel("y")).toBe(false)
+    });
+    it('should return false when input is number', function () {
+        expect(isVowel(4)).toBe(false)
+    });
+    it('should return false when parameters are true or false', function () {
+        expect(isVowel(isVowel(true), isVowel(false))).toBe(false)
+    });
+    it('should return false when parameter is string', function () {
+        expect(isVowel("banana")).toBe(false);
+    });
+    it('should return false when there ir no input', function () {
+        expect(isVowel(undefined)).toBe(false)
+    });
+})
 
 
 // //exercise 13
-// describe('add', function (){
-//     it('should be a function', function () {
-//         expect(typeof add).toBe('function')
-//     });
-//     it('should return 5', function () {
-//         expect(add(2, 3)).toBe(5)
-//     });
-//     it('should return -12', function () {
-//       expect(add(-3,-9)).toBe(-12)
-//     });
-//     it('should return 11', function () {
-//         expect(add("5", 6)).toBe(11)
-//     });
-//     it('should return 6', function () {
-//         expect(add("-4","10")).toBe(6)
-//     });
-//     it('should return "NaN"', function () {
-//         expect( add("banana","split")).toBe('NaN')
-//     });
-// })
+describe('add', function (){
+    it('should be a function', function () {
+        expect(typeof add).toBe('function')
+    });
+    it('should return 5', function () {
+        expect(add(2, 3)).toBe(5)
+    });
+    it('should return -12 when adding negative number', function () {
+      expect(add(-3,-9)).toBe(-12)
+    });
+    it('should return 11 when parameter left is within a string', function () {
+        expect(add("5", 6)).toBe(11)
+    });
+    it('should return 6 when numbers are within a string', function () {
+        expect(add("-4","10")).toBe(6)
+    });
+    // it('should return "NaN" when given parameters as strings', function () {
+    //     expect(  add("banana","split")).toBe(NaN)
+    // });
+});
