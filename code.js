@@ -85,7 +85,7 @@ function isVowel(letter) {
 
 function add(num1, num2) {
     if (isNaN(num1) || isNaN(num2)){
-        return 'NaN';
+        return isNaN();
     }
     else {
         return parseInt(num1) + parseInt(num2);
