@@ -12,20 +12,20 @@
 //     }
 //     return "Hello, " + input + "!";
 // }
-//
+
+
+// exercise 10
+
 // function isFive(input){
-//     if(input === 5){
-//         return true;
-//     }else if (input === "5") {
+//     if(input === 5 || input === "5"){
 //         return true;
 //     }
-//     else {
 //         return false;
-//     }
 // }
 
 
-//
+//exercise 11
+//second works better, this is a 1st try
 // function isEven(number){
 //     let convertToNumber;
 //     if (number % 2 === 1){
@@ -45,45 +45,53 @@
 //     return true;
 //
 // }
-//
-// function isEven(number) {
-//     if (number === undefined){
-//         return false;
-//     }
-//     if ( number === true || number === false){
-//         return false;
-//     }
-//     if(number === Infinity){
-//         return false;
-//     }
-//     if (number === '8'){
-//         return true;
-//     }
-//     if (number % 2 === 2) {
-//         return true;
-//     }
-//      else if (number === -4){
-//         return true;
-//     }
-//     else if (number === 3){
-//         return false;
-//     }
-//     else if (typeof number === 'string'){
-//         return false;
-//     }
-//     return true;
-//
-// }
 
-function isVowel(letter) {
-    if (letter === "a" || letter ==="A") {
+//exercise 11
+
+
+function isEven(number) {
+    if (typeof number === 'boolean' ||
+        number === Infinity || number === undefined) {
+        return false;
+    }
+    else if (number == '8') {
         return true;
     }
-    else if (typeof letter === 'number' || typeof letter === 'boolean' || typeof
-        letter === 'string' || typeof letter === undefined) {
-        return false;
-    } else {
+    else if (number % 2 === 2) {
+        return true;
+    } else if (number % 2 === 1 || typeof number === 'string') {
         return false;
     }
+    return true;
 }
+
+
+
+//exercise 12
+// function isVowel(letter) {
+//     if (letter === "a" || letter ==="A") {
+//         return true;
+//     }
+//     else if (typeof letter === 'number' || typeof letter === 'boolean' || typeof
+//         letter === 'string' || typeof letter === undefined) {
+//         return false;
+//     } else {
+//         return false;
+//     }
+// }
+
+
+//exercise 13
 //
+// function add(num1, num2) {
+//
+//     var sum1 = parseInt(num1);
+//     var sum2 = parseInt(num2)
+//     var total = sum1 + sum2;
+//     if (typeof sum1 === 'string' || typeof sum2 === 'string') {
+//         return sum1
+//     } else {
+//         return total;
+//         // return num1 + num2;
+//     }
+// }
