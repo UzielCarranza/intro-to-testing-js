@@ -45,33 +45,52 @@
 //     return true;
 //
 // }
+//
+// function isEven(number) {
+//     if (number === undefined){
+//         return false;
+//     }
+//     if ( number === true || number === false){
+//         return false;
+//     }
+//     if(number === Infinity){
+//         return false;
+//     }
+//     if (number === '8'){
+//         return true;
+//     }
+//     if (number % 2 === 2) {
+//         return true;
+//     }
+//      else if (number === -4){
+//         return true;
+//     }
+//     else if (number === 3){
+//         return false;
+//     }
+//     else if (typeof number === 'string'){
+//         return false;
+//     }
+//     return true;
+//
+// }
 
-function isEven(number) {
-    if (number === undefined){
-        return false;
-    }
-    if ( number === true || number === false){
-        return false;
-    }
-    if(number === Infinity){
-        return false;
-    }
-    if (number === '8'){
+function isVowel(letter){
+    if (letter === "a"){
         return true;
-    }
-    if (number === 2) {
+    } else if (letter === "A"){
         return true;
-    }
-     else if (number === -4){
-        return true;
-    }
-    else if (number === 3){
+    } else if (letter === "y"){
+        return false;
+    } else if(typeof letter === 'number'){
+        return false;
+    } else if (typeof letter === 'boolean'){
+        return false;
+    } else if (typeof letter === 'string'){
+        return false;
+    } else if (letter === undefined){
         return false;
     }
-    else if (typeof number === 'string'){
-        return false;
-    }
-    return true;
-
+return true;
 }
-
+//
